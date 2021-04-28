@@ -1,3 +1,6 @@
+body{
+    background: gainsboro;
+}
 /*******************HEADER AND NAV*************/
 .showcase {
   background-color: black;
@@ -127,9 +130,43 @@
   padding: 10px;
 }
 
-.footer-body{
-    background: yellow;
-    margin: 5px;
-    height: 25px;
-    width: 100%;
+.footer-body {
+  background: yellow;
+  margin: 5px;
+  height: 25px;
+  width: 100%;
+}
+
+/************************@MEDIA QUERYS***************/
+
+@media (max-width: 800px) {
+  .showbody {
+    display: block;
+    background: rgb(241 221 41 / 73%);
+  }
+
+  .navbar-brand,
+  .navbar-start,
+  .navbar-end,
+  .title {
+    height: 40%;
+  }
+
+  .wrapper div,
+  .wrapper-two div,
+  .footer-body {
+    height: 20px;
+  }
+  .header, .navbar{
+      margin: 10px;
+  }
+
+  .article-container{
+     margin: 5px;
+     padding: 2px;
+  }
+
+  .article-body{
+      height: 20px;
+  }
 }
