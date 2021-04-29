@@ -1,5 +1,5 @@
-body{
-    background: gainsboro;
+body {
+  background: gainsboro;
 }
 /*******************HEADER AND NAV*************/
 .showcase {
@@ -138,6 +138,8 @@ body{
 }
 
 /************************@MEDIA QUERYS***************/
+
+/************************TABLET*********************/
 @media (min-width: 768px) and (max-width: 1024px) {
   .showbody {
     display: block;
@@ -156,18 +158,96 @@ body{
   .footer-body {
     height: 20px;
   }
-  .header, .navbar{
-      margin: 10px;
+  .header,
+  .navbar {
+    margin: 10px;
   }
 
-  .article-container{
-     margin: 5px;
-     padding: 2px;
+  .article-container {
+    margin: 5px;
+    padding: 2px;
+  }
+
+  .article-body {
+    height: 20px;
+  }
+}
+
+/***********************MOBILE**********************/
+@media (max-width: 767px) {
+  body {
+    background: rgb(204, 199, 209);
+  }
+
+  .showcase > .navbar,
+  .showcase > .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 20px 20px;
+    /* background: rgb(71 103 206); */
+  }
+
+  .showcase > .navbar {
+    background: rgb(56, 68, 82);
+    height: 150px;
+  }
+
+  .showcase > .header {
+    background: rgb(6, 139, 84);
+    height: 75px;
+  }
+
+  .navbar-brand,
+  .navbar-start,
+  .navbar-end {
+    width: 80%;
+    height: 40%;
+    margin: 10px;
+    background: rgb(211 71 71);
+  }
+
+  .header .title {
+    height: 40%;
+    width: 80%;
+  }
+
+  .section{
+    margin: 15px;
+  }
+  .showbody {
+    display: block;
+    background: rgb(245 245 9 / 82%);
+  }
+  
+  .wrapper {
+    display: block;
+    padding-top: 2px;
+  }
+
+  .wrapper div {
+    margin: 15px 30px;
+  }
+  .wrapper-two{
+    padding-bottom: 15px;
+  }
+
+  .wrapper-two div{
+    margin: 0 30px;
   }
 
   .article-body{
-      height: 20px;
+    margin: 10px 30px;
   }
-  
-}
 
+  .article-container{
+    padding: 10px;
+    
+  }
+
+  .footer-body{
+    margin: 10px;
+    background: rgba(241, 221, 41, 0.733);
+  }
+}
