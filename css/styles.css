@@ -138,8 +138,7 @@ body{
 }
 
 /************************@MEDIA QUERYS***************/
-
-@media (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .showbody {
     display: block;
     background: rgb(241 221 41 / 73%);
@@ -169,4 +168,6 @@ body{
   .article-body{
       height: 20px;
   }
+  
 }
+
